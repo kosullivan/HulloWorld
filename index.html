@@ -17,9 +17,9 @@
   var map = L.map('map').setView([47.604, -122.329], 10.2);
 
   // load a tile layer
-  L.tileLayer('https://api.mapbox.com/styles/v1/kieranos/cizxticld00342slloas6rl0s.html?fresh=true&title=true&access_token=pk.eyJ1Ijoia2llcmFub3MiLCJhIjoiY2l6cmNjNHM3MDAydjJxcGN4ZG5sZnN6YiJ9.aglZm4llyJC6_VslRDTO-g#10.2/47.603570/-122.329500/0',
+  L.tileLayer('https://api.mapbox.com/styles/v1/kieranos/cizxticld00342slloas6rl0s/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoia2llcmFub3MiLCJhIjoiY2l6cmNjNHM3MDAydjJxcGN4ZG5sZnN6YiJ9.aglZm4llyJC6_VslRDTO-g,
     {
-      attribution: 'Tiles by <a href="http://mapc.org">MAPC</a>, Data by <a href="http://mass.gov/mgis">MassGIS</a>',
+      attribution: 'Tiles by Me, Data provided by Starbucks',
       maxZoom: 17,
       minZoom: 9
     }).addTo(map);
