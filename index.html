@@ -1,1 +1,29 @@
-<h1>First text<h1>
+<html>
+<head>
+  <title>Starbucks Locations 2017, made with Leaflet</title>
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
+  <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+  <style>
+    #map{ width: 900px; height: 500px; }
+  </style>
+</head>
+<body>
+
+  <div id="map"></div>
+
+  <script>
+
+  // initialize the map
+  var map = L.map('map').setView([47.604, -122.329], 10.2);
+
+  // load a tile layer
+  L.tileLayer('https://api.mapbox.com/styles/v1/kieranos/cizxticld00342slloas6rl0s.html?fresh=true&title=true&access_token=pk.eyJ1Ijoia2llcmFub3MiLCJhIjoiY2l6cmNjNHM3MDAydjJxcGN4ZG5sZnN6YiJ9.aglZm4llyJC6_VslRDTO-g#10.2/47.603570/-122.329500/0',
+    {
+      attribution: 'Tiles by <a href="http://mapc.org">MAPC</a>, Data by <a href="http://mass.gov/mgis">MassGIS</a>',
+      maxZoom: 17,
+      minZoom: 9
+    }).addTo(map);
+
+  </script>
+</body>
+</html>
